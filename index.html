@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musa's Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <span class="nav__logo-symbol">◈</span>
+      <span class="nav__logo-text">MUSA GORDARD</span>
+    </div>
+
+    <div class="nav__links">
+      <a href="#hero" class="nav__link" data-text="Home">Home</a>
+      <a href="#about" class="nav__link" data-text="About">About</a>
+      <a href="#work" class="nav__link" data-text="Work">Work</a>
+      <a href="#services" class="nav__link" data-text="Services">Services</a>
+      <a href="#contact" class="nav__link" data-text="Contact">Contact</a>
+    </div>
+
+    <div class="nav__right">
+      <span class="nav__availability">
+        <span class="nav__dot"></span>
+        Available for projects
+      </span>
+      <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-menu__link">Home</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#work" class="mobile-menu__link">Work</a>
+    <a href="#services" class="mobile-menu__link">Services</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+
+    <div class="hero__left">
+      <div class="hero__card">
+        <div class="hero__card-photo">
+          <img src="assets/profile.png" alt=" Musa profile Photo" id="heroPhoto" />
+          <div class="hero__card-photo-placeholder">
+            <span>Musa's Profile</span>
+          </div>
+        </div>
+        <h2 class="hero__card-name">Musa Gordard</h2>
+        <p class="hero__card-email">lukwa67mgm@gmail.com</p>
+        <p class="hero__card-location">📍 Dar es Salaam, Tanzania</p>
+        <div class="hero__card-socials">
+          <a href="https://github.com/Mozcodez" class="social-icon" title="Github"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/Mozgodz" class="social-icon" title="Twitter/X">𝕏</a>
+          <a href="mailto:lukwa67mgm@gmail.com" class="social-icon" title="Gmail"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/musa-mwakaluka-548b48336/" class="social-icon" title="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
+        </div>
+        <a href="#contact" class="hero__card-cta">
+          <span>Get Started</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="hero__location-bar">
+        <span class="hero__location-city">Dar es Salaam, Tanzania</span>
+        <span class="hero__time" id="liveTime">— : — AM</span>
+      </div>
+
+      <p class="hero__tag">• Introduction</p>
+      <h1 class="hero__headline">
+        <span class="hero__headline-line" data-animate>Making Your World a</span>
+        <span class="hero__headline-line hero__headline-line--accent" data-animate>Pain Free</span>
+        <span class="hero__headline-line" data-animate>Experience</span>
+      </h1>
+
+      <p class="hero__sub">
+        My passion lies in crafting elegant, straightforward digital experiences.<br />
+        It's a love for simplicity, pure and simple.
+      </p>
+
+      <div class="hero__tags">
+        <span class="tag">Web Development</span>
+        <span class="tag">Digital Marketing</span>
+        <span class="tag">Graphics Design</span>
+        <span class="tag">Branding</span>
+        </div>
+
+      <div class="hero__stats">
+        <div class="stat-card">
+          <span class="stat-card__label">• Success Rate</span>
+          <span class="stat-card__value" data-count="98">0</span>
+          <span class="stat-card__suffix">%</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__label">• Projects Done</span>
+          <span class="stat-card__value" data-count="30">0</span>
+          <span class="stat-card__suffix">+</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Side nav icons -->
+    <div class="hero__sidenav">
+      <a href="#hero" class="sidenav-icon active" title="Home">⌂</a>
+      <a href="#about" class="sidenav-icon" title="About">◯</a>
+      <a href="#work" class="sidenav-icon" title="Work">▭</a>
+      <a href="#services" class="sidenav-icon" title="Services">≡</a>
+      <a href="#contact" class="sidenav-icon" title="Contact">✉</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <div class="about__left reveal">
+        <span class="section-tag">• About Me</span>
+        <h2 class="section-title">
+          I design digital<br />
+          <em>experiences</em> that<br />
+          resonate deeply.
+        </h2>
+        <p class="about__body">
+          With about 2 years of crafting digital products, I blend aesthetics with functionality. 
+          Every pixel has a purpose. Every interaction tells a story. I work at the intersection 
+          of design and technology to build products people actually love using.
+        </p>
+        <div class="about__skills">
+          <div class="skill-bar" data-skill="UI/UX Design" data-pct="95">
+            <div class="skill-bar__label"><span>Graphics Design</span><span>95%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-skill="Web Development" data-pct="88">
+            <div class="skill-bar__label"><span>Web Development</span><span>88%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-skill="Branding" data-pct="80">
+            <div class="skill-bar__label"><span>Branding</span><span>80%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+          <div class="skill-bar" data-skill="Motion Design" data-pct="75">
+            <div class="skill-bar__label"><span>Digital Marketing</span><span>75%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill"></div></div>
+          </div>
+        </div>
+        <a href="assets/resume.pdf" download class="btn btn--outline">Download Resume ↓</a>
+      </div>
+
+      <div class="about__right reveal reveal--right">
+        <div class="about__image-wrap">
+          <img src="assets/about.png" alt="About" id="aboutPhoto" />
+          <div class="about__badge about__badge--1">
+            <span class="badge-num">2+</span>
+            <span class="badge-label">Years<br/>Experience</span>
+          </div>
+          <div class="about__badge about__badge--2">
+            <span class="badge-num">20+</span>
+            <span class="badge-label">Happy<br/>Clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK SECTION ===== -->
+  <section class="work" id="work">
+    <div class="work__header reveal">
+      <span class="section-tag">• Selected Work</span>
+      <h2 class="section-title">Recent <em>Projects</em></h2>
+    </div>
+
+    <div class="work__filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+      <button class="filter-btn" data-filter="ui">UI/UX</button>
+    </div>
+
+    <div class="work__grid" id="workGrid">
+
+      <div class="project-card" data-category="web">
+        <div class="project-card__img">
+          <img src="assets/project1.jpg" alt="Project 1" />
+          <div class="project-card__img-placeholder">Project 1</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=1" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">Web Design</span>
+          <h3 class="project-card__title">Luminary Finance App</h3>
+        </div>
+      </div>
+
+      <div class="project-card project-card--tall" data-category="branding">
+        <div class="project-card__img">
+          <img src="assets/project2.jpg" alt="Project 2" />
+          <div class="project-card__img-placeholder">Project 2</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=2" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">Branding</span>
+          <h3 class="project-card__title">Verdant Brand Identity</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="ui">
+        <div class="project-card__img">
+          <img src="assets/project3.jpg" alt="Project 3" />
+          <div class="project-card__img-placeholder">Project 3</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=3" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">UI/UX</span>
+          <h3 class="project-card__title">Pulse Health Dashboard</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="web">
+        <div class="project-card__img">
+          <img src="assets/project4.jpg" alt="Project 4" />
+          <div class="project-card__img-placeholder">Project 4</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=4" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">Web Design</span>
+          <h3 class="project-card__title">Nomad Travel Platform</h3>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="branding">
+        <div class="project-card__img">
+          <img src="assets/project5.jpg" alt="Project 5" />
+          <div class="project-card__img-placeholder">Project 5</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=5" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">Branding</span>
+          <h3 class="project-card__title">Ember Coffee Co.</h3>
+        </div>
+      </div>
+
+      <div class="project-card project-card--wide" data-category="ui">
+        <div class="project-card__img">
+          <img src="assets/project6.jpg" alt="Project 6" />
+          <div class="project-card__img-placeholder">Project 6</div>
+          <div class="project-card__overlay">
+            <a href="project.html?id=6" class="project-card__link">View Project →</a>
+          </div>
+        </div>
+        <div class="project-card__info">
+          <span class="project-card__cat">UI/UX</span>
+          <h3 class="project-card__title">Atlas Navigation System</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="services__header reveal">
+      <span class="section-tag">• What I Do</span>
+      <h2 class="section-title">Services I <em>Offer</em></h2>
+    </div>
+
+    <div class="services__grid">
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-card__icon">◈</div>
+        <h3 class="service-card__title">Graphics Design</h3>
+        <p class="service-card__desc">Crafting intuitive, beautiful interfaces that delight users and drive engagement across every touchpoint.</p>
+        <span class="service-card__num">01</span>
+      </div>
+      <div class="service-card reveal" data-delay="100">
+        <div class="service-card__icon">⬡</div>
+        <h3 class="service-card__title">Brand Identity</h3>
+        <p class="service-card__desc">Building cohesive visual identities that tell your brand story with clarity, emotion, and lasting impact.</p>
+        <span class="service-card__num">02</span>
+      </div>
+      <div class="service-card reveal" data-delay="200">
+        <div class="service-card__icon">▭</div>
+        <h3 class="service-card__title">Web Development</h3>
+        <p class="service-card__desc">From pixel-perfect HTML to full-stack applications — clean, fast, and accessible code at every layer.</p>
+        <span class="service-card__num">03</span>
+      </div>
+      <div class="service-card reveal" data-delay="300">
+        <div class="service-card__icon">⟳</div>
+        <h3 class="service-card__title">Digital Marketing</h3>
+        <p class="service-card__desc">Adding life to interfaces through purposeful motion design, micro-interactions, and scroll storytelling.</p>
+        <span class="service-card__num">04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials__header reveal">
+      <span class="section-tag">• Kind Words</span>
+      <h2 class="section-title">Client <em>Stories</em></h2>
+    </div>
+
+    <div class="testimonials__slider">
+      <div class="testimonial-track" id="testimonialTrack">
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">"Working with Musa was transformative. The Branding and videography he built scaled our Airbnb and delighted our guests from day one."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CM</div>
+            <div>
+              <strong>Christina Mahoo</strong>
+              <span>Host, Airbnb</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">"Exceptional attention to detail. Every decision was intentional and the results speak for themselves. Our conversion rate doubled."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div>
+              <strong>Ahmed </strong>
+              <span>Chairman, Ibafsa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">"Not just a designer but a strategic partner. They understood our vision and elevated it beyond what we imagined possible."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AM</div>
+            <div>
+              <strong>Abubakar</strong>
+              <span>lead Engineer, Oasis Technologies</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="testimonials__controls">
+        <button class="testimonial-btn" id="prevTestimonial">←</button>
+        <div class="testimonials__dots" id="testimonialDots"></div>
+        <button class="testimonial-btn" id="nextTestimonial">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <div class="contact__left reveal">
+        <span class="section-tag">• Get In Touch</span>
+        <h2 class="section-title">Let's Build<br /><em>Something</em><br />Together</h2>
+        <p class="contact__body">Have a project in mind? I'd love to hear about it. Send me a message and let's make something great.</p>
+
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon"><i class="fa-solid fa-phone"></i></span>
+            <a href="call:+255755626303">+255 755 626 303</a>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">✉</span>
+            <a href="mailto:lukwa67mgm@gmail.com">lukwa67mgm@gmail.com</a>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📍</span>
+            <span>Dar es Salaam, Tanzania</span>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">⏰</span>
+            <span>Mon–Fri, 9AM – 6PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__right reveal reveal--right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="nameInput" name="name" placeholder=" " required />
+            <label for="nameInput">Your Name</label>
+            <div class="form-group__border"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="emailInput" name="email" placeholder=" " required />
+            <label for="emailInput">Email Address</label>
+            <div class="form-group__border"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subjectInput" name="subject" placeholder=" " />
+            <label for="subjectInput">Project Type</label>
+            <div class="form-group__border"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="messageInput" name="message" placeholder=" " rows="4" required></textarea>
+            <label for="messageInput">Your Message</label>
+            <div class="form-group__border"></div>
+          </div>
+          <button type="submit" class="btn btn--primary">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="nav__logo-symbol">◈</span>
+        <span>Moz</span>
+      </div>
+      <div class="footer__links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__socials">
+        <a href="https://x.com/Mozgodz" class="social-icon">𝕏</a>
+        <a href="https://github.com/Mozcodez" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:lukwa67mgm@gmail.com" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/musa-mwakaluka-548b48336/" class="social-icon"><i class="fa-brands fa-square-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Musa Gordard. All rights reserved.</span>
+      <span>Crafted with ♥ and lots of Coffee</span>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

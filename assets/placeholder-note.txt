@@ -1,0 +1,5 @@
+Add your images here:
+- profile.jpg   (your hero card portrait photo)
+- about.jpg     (your about section photo)
+- resume.pdf    (your CV for download)
+- project1.jpg through project6.jpg  (project thumbnails)

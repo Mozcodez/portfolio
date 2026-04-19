@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Your Name Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <a href="index.html" style="display:flex;align-items:center;gap:8px;">
+        <span class="nav__logo-symbol">◈</span>
+        <span class="nav__logo-text">YourName</span>
+      </a>
+    </div>
+    <div class="nav__links">
+      <a href="index.html#hero"     class="nav__link" data-text="Home">Home</a>
+      <a href="index.html#about"    class="nav__link" data-text="About">About</a>
+      <a href="index.html#work"     class="nav__link" data-text="Work">Work</a>
+      <a href="index.html#services" class="nav__link" data-text="Services">Services</a>
+      <a href="index.html#contact"  class="nav__link" data-text="Contact">Contact</a>
+    </div>
+    <div class="nav__right">
+      <a href="index.html#work" class="btn btn--outline" style="padding:10px 24px;font-size:0.8rem;">← Back to Work</a>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <section class="proj-hero">
+    <div class="proj-hero__bg">
+      <img src="assets/project1.jpg" alt="Project" id="projHeroImg" />
+      <div class="proj-hero__bg-placeholder">Project Cover</div>
+      <div class="proj-hero__overlay"></div>
+    </div>
+
+    <div class="proj-hero__content">
+      <span class="section-tag" id="projCat">Web Design</span>
+      <h1 class="proj-hero__title" id="projTitle">Luminary Finance App</h1>
+      <div class="proj-hero__meta">
+        <div class="proj-meta-item">
+          <span class="proj-meta-item__label">Client</span>
+          <span class="proj-meta-item__value" id="projClient">Luminary Inc.</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="proj-meta-item__label">Year</span>
+          <span class="proj-meta-item__value" id="projYear">2024</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="proj-meta-item__label">Role</span>
+          <span class="proj-meta-item__value" id="projRole">UI/UX Designer</span>
+        </div>
+        <div class="proj-meta-item">
+          <span class="proj-meta-item__label">Duration</span>
+          <span class="proj-meta-item__value" id="projDuration">8 weeks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Body -->
+  <section class="proj-body">
+    <div class="proj-body__container">
+
+      <div class="proj-body__overview reveal">
+        <div class="proj-body__overview-text">
+          <h2 class="section-title">Project <em>Overview</em></h2>
+          <p id="projOverview">
+            Luminary Finance needed a complete redesign of their mobile app. The goal was to simplify 
+            complex financial data into an intuitive dashboard that anyone can understand at a glance.
+            Working closely with their product team, we transformed cluttered screens into a clean,
+            modern experience that reduced user confusion and increased daily active usage by 40%.
+          </p>
+        </div>
+        <div class="proj-body__tags">
+          <span class="tag">Figma</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Design System</span>
+        </div>
+      </div>
+
+      <!-- Image Gallery -->
+      <div class="proj-gallery reveal">
+        <div class="proj-gallery__main">
+          <img src="assets/project1.jpg" alt="Project screenshot" />
+          <div class="proj-gallery__placeholder">Screenshot 1</div>
+        </div>
+        <div class="proj-gallery__grid">
+          <div class="proj-gallery__item">
+            <img src="assets/project2.jpg" alt="Detail" />
+            <div class="proj-gallery__placeholder">Detail 1</div>
+          </div>
+          <div class="proj-gallery__item">
+            <img src="assets/project3.jpg" alt="Detail" />
+            <div class="proj-gallery__placeholder">Detail 2</div>
+          </div>
+          <div class="proj-gallery__item">
+            <img src="assets/project4.jpg" alt="Detail" />
+            <div class="proj-gallery__placeholder">Detail 3</div>
+          </div>
+          <div class="proj-gallery__item">
+            <img src="assets/project5.jpg" alt="Detail" />
+            <div class="proj-gallery__placeholder">Detail 4</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="proj-process reveal">
+        <h2 class="section-title">The <em>Process</em></h2>
+        <div class="proj-process__steps">
+          <div class="process-step">
+            <span class="process-step__num">01</span>
+            <div>
+              <h3>Discovery & Research</h3>
+              <p>User interviews, competitor analysis, and stakeholder workshops to define the problem space and success metrics.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__num">02</span>
+            <div>
+              <h3>Wireframes & IA</h3>
+              <p>Rapid sketching and digital wireframing to explore information architecture and key user flows before committing to visuals.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__num">03</span>
+            <div>
+              <h3>Visual Design</h3>
+              <p>High-fidelity mockups with a cohesive design system — typography, color, spacing, components — all documented for the dev team.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="process-step__num">04</span>
+            <div>
+              <h3>Prototype & Test</h3>
+              <p>Interactive prototypes tested with real users. Three rounds of iteration based on usability testing feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="proj-results reveal">
+        <h2 class="section-title">The <em>Results</em></h2>
+        <div class="proj-results__grid">
+          <div class="result-stat">
+            <span class="result-stat__num">+40%</span>
+            <span class="result-stat__label">Daily Active Users</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-stat__num">-60%</span>
+            <span class="result-stat__label">Support Tickets</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-stat__num">4.8★</span>
+            <span class="result-stat__label">App Store Rating</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-stat__num">2×</span>
+            <span class="result-stat__label">Conversion Rate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next Project -->
+      <div class="proj-next reveal">
+        <span class="section-tag">• Next Project</span>
+        <a href="project.html?id=2" class="proj-next__link">
+          <h2 class="proj-next__title">Verdant Brand Identity →</h2>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="nav__logo-symbol">◈</span>
+        <span>YourName</span>
+      </div>
+      <div class="footer__links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer__socials">
+        <a href="#" class="social-icon">𝕏</a>
+        <a href="#" class="social-icon">◈</a>
+        <a href="#" class="social-icon">⬡</a>
+        <a href="#" class="social-icon">in</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 YourName. All rights reserved.</span>
+      <span>Crafted with ♥</span>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
