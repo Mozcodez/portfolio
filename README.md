@@ -31,39 +31,6 @@ portfolio/
     ├── project4.jpg
     ├── project5.jpg
     └── project6.jpg
-```
-
----
-
-## 🚀 Quick Start
-
-1. **Create the `assets/` folder** inside `portfolio/`
-2. **Add your images** (see list above). The site uses placeholder backgrounds if images are missing.
-3. **Open `index.html`** in any browser — no build step needed.
-4. For best results, use a local server:
-   - VS Code → install **Live Server** extension → right-click `index.html` → Open with Live Server
-   - Or: `python -m http.server 8000` in the `portfolio/` folder
-
----
-
-## ✏️ How to Personalize
-
-### index.html
-Search and replace these placeholders:
-
-| Placeholder             | Replace with              |
-|-------------------------|---------------------------|
-| `Your Name`             | Your full name            |
-| `YourName`              | Short name / brand        |
-| `yourname@email.com`    | Your email                |
-| `Your City, Country`    | Your location             |
-| `Luminary Finance App`  | Your project names        |
-| `20` (stat count)       | Your actual numbers       |
-| `98` (stat count)       | Your success rate         |
-| `150` (stat count)      | Your project count        |
-
-### css/style.css — Change Colors
-At the top of `style.css`, edit the CSS variables:
 
 ```css
 :root {
@@ -72,14 +39,6 @@ At the top of `style.css`, edit the CSS variables:
   --accent-2:  #f0a070;    /* Lighter accent */
   --text:      #e8e4dc;    /* Body text */
 }
-```
-
-### Add Real Projects
-In `index.html`, find the `.work__grid` section and edit each `.project-card`:
-- Change `data-category` to `branding`, `web`, or `ui`
-- Replace `src="assets/projectX.jpg"` with your image
-- Update the title and category label
-
 ---
 
 ## ✨ Features
@@ -118,4 +77,4 @@ The only external resources are **Google Fonts** (loaded via CDN) — works offl
 
 ---
 
-Made with ♥ — personalize it and make it yours!
+Made with ♥ and coffee
