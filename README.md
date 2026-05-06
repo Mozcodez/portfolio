@@ -1,7 +1,6 @@
 # ◈ Personal Portfolio Template
 
-A dark luxury portfolio website inspired by the Jayden portfolio design.
-Built with pure HTML, CSS, and JavaScript — no frameworks required.
+A dark luxury portfolio website built with pure HTML, CSS, and JavaScript — no frameworks required.
 
 ---
 
